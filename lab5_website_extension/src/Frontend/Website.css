@@ -1,0 +1,65 @@
+body{
+    background-image: url(/main_page/data/src/Frontend/background.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+}
+h1{
+    color: chartreuse;
+}
+#logList{
+    color: firebrick;
+    font-size: 1.5em;
+}
+#logList tr{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1900px;
+    height: 100px;
+}
+
+#logList th, #logList td{
+    border: 1px solid chartreuse;
+}
+
+#logList th.firstColumn, #logList td.firstColumn, #logList th.errorMessageColorField{
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+#logList th.errorMessageColorField{
+    background-color: darkred;
+    opacity: 1;
+}
+
+#logList th.secondColumn, #logList td.secondColumn{
+    flex-grow: 8;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+#logList th.firstColumn{
+    color: blueviolet;
+}
+
+#logList th.secondColumn{
+    color: aqua;
+}
+
+#logList td{
+    color: darkolivegreen;
+}
+
+button{
+    border-radius: 10px;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    display: flex;
+    margin: auto;
+}
+
+button#reloadButton{
+
+}

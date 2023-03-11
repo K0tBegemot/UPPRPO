@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello world</title>
+    <link rel="stylesheet" href="/main_page/data/src/Frontend/Website.css">
+    <script src="/main_page/data/src/Frontend/reloadScript.js"></script>
+</head>
+<body onload="loadMainPage()">
+<h1>SOCKS5 Server logs</h1>
+<button id="loadPrevChunk" onclick="loadPrevChunk(null)">Load prev 100 rows</button>
+<table id="logList">
+    <thead>
+        <tr>
+            <th class="firstColumn">Log String id</th>
+            <th class="secondColumn">Content</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<button id="loadNextChunk" onclick="loadNextChunk(null)">Load next 100 rows</button>
+<button id="reloadButton" onclick="reloadPage()">Reload page</button>
+</body>
+</html>
